@@ -1,0 +1,106 @@
+body
+{
+	width:99%;
+    height:auto;
+    background-image:url('images/bc.jpg');
+}
+#main
+{
+    background-color:white;
+    width:90%;
+    height:auto;
+    margin-top: 7%;
+    margin-left: 8%;
+    border-radius: 30px;
+}
+.question
+{
+	height:360px;
+	width:90%;
+	margin:auto;
+}
+h1
+{
+	height:45px;
+	width:100%;
+	text-align:center;
+}
+h3
+{
+   font-size: x-large; 
+}
+#radioDiv
+{
+	height: 40px;
+    width: 37%;
+    margin-left: 113px;
+    margin-top: 4px;
+    float: left;
+    font-size: large;
+}
+.answer
+{
+	float:left;
+	height:100px;
+	width:100%;
+	color: firebrick;
+    font-size:medium;
+    text-align: center;
+}
+input[type=radio] 
+{
+    width: 17px;
+    height: 17px;
+}
+.next, .display , .preview , .submit
+{
+    height: 35px;
+    width: 18%;
+    margin-left: 45px;
+    margin-top: 25px;
+    border-radius:15px;
+    border: none;
+}
+ .startOver
+ {
+    height: 35px;
+    width: 40%;
+    margin-left: 30%;
+    text-align:center;
+    border-radius:15px;
+    border: none;
+ }
+.next:hover , .display:hover , .preview:hover , .startOver:hover , .submit:hover
+{
+    background-color:black;
+    color:white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}
+
+p#finalScore
+{
+text-align:center;
+font-size: larger;
+}
+.navbar {
+  width: 90%;
+  height: 65px;
+  background-color: white;
+  margin-left: 8%;
+  border-radius: 30px;
+}
+
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 21px 39px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+.navbar a:hover {
+  background:black;
+  color: #ddd;
+}

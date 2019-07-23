@@ -1,0 +1,123 @@
+<html>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <head>
+  <title>quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+  <script src="javascript.js"></script>
+ </head>
+ <body>
+    
+    <div class="navbar">
+  <a href="#" rel="q1">Question 1</a>
+  <a href="#" rel="q2">Question 2</a>
+  <a href="#" rel="q3">Question 3</a>
+  <a href="#" rel="q4">Question 4</a>
+  <a href="#" rel="q5">Question 5</a>
+  <a href="#" rel="q6">Question 6</a>
+</div>  
+<div id="main">
+    <p id="finalScore"></p>
+      <h1>QUIZ</h1>    <!-- main heading -->
+      <div class="question" id="q1">     <!-- question 1  multiple choice-->
+	    <h3>Question 1: 
+	       What is the name of the first American Shorthair cat born in the USA? <!-- question 1 detail-->
+	    </h3>
+        <!-- radio buttons inside a divs-->
+        <div id="radioDiv" class="wrongAnsQue"> <input type="radio" name="radioid" value="Crazy Cat">Crazy Cat</div> 
+        <div id="radioDiv" class="rightAnsQue"><input type="radio" name="radioid"  value="Buster Brown">Buster Brown</div>
+        <div id="radioDiv" class="wrongAnsQue"><input type="radio" name="radioid"  value="Joe Cat">Joe Cat</div>
+        <div id="radioDiv" class="wrongAnsQue"><input type="radio" name="radioid"  value="Kitty Galore">Kitty Galore</div><br>
+		<!-- stores 1st que's ans in new div-->
+        <div class="answer" >ans: <b>Buster Brown</b> was an orange tabby male named Belle that ironically was imported from England 
+        in the early 1900s. It wasn't until 1904 when the first American-born American Shorthair ( Buster Brown) was registered under 
+        the breed name of Shorthair
+        <p id="p"></p></div>
+        <!-- buttons for slide show-->
+        <button class="next" >Next</button>
+	    <button class="display" id="display1" >Display answer</button>  <!-- buttons display ans during quiz-->
+	<button class="submit">End Quiz</button>
+       </div>
+       <!-- question 2  multiple choice-->
+      <div class="question" id="q2">
+         <h3>Question 2 :
+          How many words maximum, can a dog understand?</h3>   <!-- question 2 detail-->
+          <div id="radioDiv" class="wrongAnsQue"> <input  type="radio" name="radioid1" value="A few dozen">A few dozen</div> 
+          <div id="radioDiv" class="rightAnsQue"><input type="radio"  name="radioid1" value="More than 1000">More than 1000</div>
+          <div id="radioDiv" class="wrongAnsQue" ><input type="radio"  name="radioid1" value="Fewer than 20">Fewer than 20</div>
+          <div id="radioDiv" class="wrongAnsQue"><input type="radio" name="radioid1" value="Fewer than 10">Fewer than 10</div>
+          <!-- stores 2nd que's ans in new div-->
+          <div class="answer" >ans:<b>More than 1000  </b>Though scientists used to think that dogs could understand only a few dozen human words,
+          Chaser, a South Carolina border collie, proved them wrong. Chaser can understand more than 1000 words, indicating that—with some 
+          training—other dogs can, too 
+	      <p id="p1"></p></div>
+          <!-- buttons for slide show-->
+	      <button class="preview">Preview</button>
+          <button class="next">Next</button>
+	      <button class="display" id="display2">Display answer</button> <!-- buttons display ans during quiz-->
+	<button class="submit">End Quiz</button>
+       </div>
+       <!-- question 3 blanks-->
+       <div class="question" id="q3">
+        <h3>Question 3:
+        Your dog is as smart as a 
+	    <input type="text" id="text" name="textbox1" placeholder="ans must be in numerical format">-year-old toddler.</h3> <!-- use textbox to fill the blank space-->
+        <!-- stores 3rd que's ans in new div-->
+        <div class="answer" >ans:<b> 2 </b>They can understand about 165 words, signs and signals. Those in the top 20 per cent were able to understand
+        as many as 250 words and signals, which is about the same as a two year old.
+		<p id="p2"></p></div>
+        <!-- buttons for slide show-->
+		<button class="preview">Preview</button>
+        <button  class="next">Next</button>
+		<button class="display" id="display3">Display answer</button><!-- buttons display ans during quiz-->
+	<button class="submit">End Quiz</button>
+     </div>
+     <!--question 4-->
+    <div class="question" id="q4">
+      <h3>Question 4:
+	  Your one year-old pup is as physically mature as a 
+	  <input type="text" id="text" name="textbox2" placeholder="ans must be in numerical format">-year-old human.</h3>  <!-- use textbox to fill the blank space-->
+      <!-- stores 3rd que's ans in new div-->
+      <div class="answer" >ans: <b>15</b> ogs also have ten more adult teeth than humans — 42 versus 32. Your one year-old pup is as physically mature as
+      a 15-year-old human. ... Large dogs age faster than small ones.
+	  <p id="p3"></p></div>
+      <!-- buttons for slide show-->
+	  <button class="preview">Preview</button>
+      <button  class="next">Next</button>
+	  <button class="display" id="display4">Display answer</button><!-- buttons display ans during quiz-->
+	<button class="submit">End Quiz</button>
+    </div>
+    <!--question 5-->
+    <div class="question" id="q5"><h3>Question 5 :
+       Dogs can hear 6 times as far as humans.</h3>  <!--true and false using two radio button -->
+       <div id="radioDiv" class="wrongAnsQue"> <input  type="radio" name="radioid3" value="True">True </div> 
+       <div id="radioDiv" class="rightAnsQue"><input type="radio" name="radioid3" value="False">False</div>
+       <!-- correct ans display-->
+       <div class="answer" >ans:<b>False</b>  they can already hear 4 times the distance of a human with normal hearing.
+       Dogs can hear higher pitched sounds and can detect a frequency range of 67-45,000 Hz, compared to a human range of 64-23,000 Hz
+       <p id="p4"></p></div>
+	   <button class="preview">Preview</button>
+        <button  class="next">Next</button>
+		<button class="display" id="display5">Display answer</button>
+	<button class="submit">End Quiz</button>
+    </div>
+    <!--question 6 -->
+    <div class="question" id="q6"><h3>Question 6 :
+      Your dog’s sense of smell is 1,000 to 10 million times better than humans.</h3> <!--last true and false using two radio button -->
+      <div id="radioDiv" class="rightAnsQue"><input type="radio" name="radioid4" value="True">True </div> 
+      <div id="radioDiv" class="wrongAnsQue"><input type="radio" name="radioid4" value="False">False</div>
+      <div class="answer" >answer:<b>True</b>  "Generally" dogs have an olfactory sense approximately 100,000 to 1,000,000 times more acute than a human's.
+      A Bloodhound, (The dog with the highest sense of smell) has a 10,000,000 to 100,000,000 higher ability than a human.
+       <p id="p5"> </p>      </div>
+	  <button class="preview">Preview</button>
+      <button class="display" id="display6">Display answer</button>
+      <button class="submit">Submit</button>
+      </div>
+      <button class="startOver">Start Quiz again</button>
+   </div>
+ </body>
+</html>
